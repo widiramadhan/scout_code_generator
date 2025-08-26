@@ -1,0 +1,45 @@
+name: scout_code_generator
+description: "A new Flutter project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.8.1
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  web: ^1.0.0
+  plugin_platform_interface: ^2.0.2
+  args: ^2.4.2
+  path: ^1.9.0
+  recase: ^4.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: scout.code.generator.scout_code_generator
+        pluginClass: ScoutCodeGeneratorPlugin
+      ios:
+        pluginClass: ScoutCodeGeneratorPlugin
+      linux:
+        pluginClass: ScoutCodeGeneratorPlugin
+      macos:
+        pluginClass: ScoutCodeGeneratorPlugin
+      windows:
+        pluginClass: ScoutCodeGeneratorPluginCApi
+      web:
+        pluginClass: ScoutCodeGeneratorWeb
+        fileName: scout_code_generator_web.dart
+
+executables:
+  scout: scout
