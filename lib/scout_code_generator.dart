@@ -64,13 +64,11 @@ class MakeFeatureCommand extends Command {
     final force = argResults!['force'] == true;
 
     final config = loadConfigOrExit();
-    if (config == null) return;
 
     final ok = validateConfig(config);
     if (!ok) {
       stderr.writeln('Config invalid. Please re-run `scout init`.');
       exit(65);
-      return;
     }
 
     // --- tanya state management ---
@@ -211,7 +209,6 @@ class MakeUsecaseCommand extends Command {
         : 'Unknown';
 
     final config = loadConfigOrExit();
-    if (config == null) return;
 
     await generateUsecase(
       config: config,

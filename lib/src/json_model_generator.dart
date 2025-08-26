@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 /// Generates a Dart model class from a JSON object
 /// modelType can be 'request' or 'response'
 String generateModelFromJson(
