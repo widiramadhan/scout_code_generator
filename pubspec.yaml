@@ -1,10 +1,10 @@
 name: scout_code_generator
 description: "Feature-based Clean Architecture code generator for Flutter/Dart. Generates models, datasource, repository, entity, and usecase with proper imports and Either<Failure, T> types."
 version: 0.0.1
-homepage: https://github.com/widiyanto-ramadhan/scout_code_generator
-repository: https://github.com/widiyanto-ramadhan/scout_code_generator
-issue_tracker: https://github.com/widiyanto-ramadhan/scout_code_generator/issues
-documentation: https://github.com/widiyanto-ramadhan/scout_code_generator#readme
+homepage: https://github.com/widiramadhan/scout_code_generator
+repository: https://github.com/widiramadhan/scout_code_generator
+issue_tracker: https://github.com/widiramadhan/scout_code_generator/issues
+documentation: https://github.com/widiramadhan/scout_code_generator#readme
 topics:
   - codegen
   - generator
@@ -39,15 +39,6 @@ flutter:
         pluginClass: ScoutCodeGeneratorPlugin
       ios:
         pluginClass: ScoutCodeGeneratorPlugin
-      linux:
-        pluginClass: ScoutCodeGeneratorPlugin
-      macos:
-        pluginClass: ScoutCodeGeneratorPlugin
-      windows:
-        pluginClass: ScoutCodeGeneratorPluginCApi
-      web:
-        pluginClass: ScoutCodeGeneratorWeb
-        fileName: scout_code_generator_web.dart
 
 executables:
   scout: scout
